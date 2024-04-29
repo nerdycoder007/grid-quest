@@ -15,6 +15,6 @@ include_directories(${GTK4_INCLUDE_DIRS})
 link_directories(${GTK4_LIBRARY_DIRS})
 add_definitions(${GTK4_CFLAGS_OTHER})
 
-add_executable(c_project main.c)
+add_executable(c_project src/main.c)
 #set_target_properties(TutorialApp PROPERTIES WIN32_EXECUTABLE true)  # If you dont want console to run with your .exe
 target_link_libraries(c_project ${GTK4_LIBRARIES})

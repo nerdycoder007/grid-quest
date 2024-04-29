@@ -1,3 +1,4 @@
+
 #include <gtk/gtk.h>
 
 static void print_hello(GtkWidget *widget, gpointer data) {
@@ -11,7 +12,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
 
   window = gtk_application_window_new(app);
   gtk_window_set_title(GTK_WINDOW(window), "Window");
-  gtk_window_set_default_size(GTK_WINDOW(window), 200, 200);
+  gtk_window_set_default_size(GTK_WINDOW(window), 600, 600);
 
   box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
   gtk_widget_set_halign(box, GTK_ALIGN_CENTER);
